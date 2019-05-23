@@ -1,0 +1,222 @@
+$bg:#062E64;
+
+$white-color:#fff;
+$font-color:#AED0FF;
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+   flex-direction: column; 
+   height: 100vh; 
+   margin:0;
+
+}
+
+footer {
+    clear: both;
+    background-color: $bg !important;
+    color: $white-color !important;
+    margin-top: 100%;
+    bottom: 0;
+    // @media only screen and (max-width: 650px) {
+    //     footer {
+    //     margin-top:20%;
+    //     }
+    //   }
+    
+
+
+    .also-featured{
+        margin-top:40px;
+        margin-left: 48px;
+        margin-right: 48px;
+        
+        h5{
+            font-family: sans-serif;
+             font-size:18px;
+             line-height: 22px;
+             color:$font-color;
+             
+        }
+    }
+        
+    
+    .tunga-offices {
+        margin:40px;
+        font-family:sans-serif, HK Grotesk;
+        
+        h4{
+  color:$font-color !important;
+  font-size: 18px;
+  line-height: 22px;
+        }
+        h5{
+  color:$white-color !important;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 15px
+        }
+        p{
+             color: $font-color;
+             font-size: 16px;
+             line-height: 24px;
+        }
+     
+       
+      }
+
+      .connect {
+        margin:40px;
+        font-family: sans-serif,HK Grotesk;
+        h4{
+        color:$font-color !important;
+        font-size: 18px;
+        line-height: 22px;
+        }
+        .hello-tunga a{
+            color:$font-color !important;
+            font-size: 16px;
+            line-height: 19px; 
+        }
+        .social-networks {
+            margin-top: 15px;
+    
+            a:first-child {
+                margin-left: 0;
+            }
+    
+            a:last-child {
+                margin-right: 0;
+            }
+    
+            a {
+                display: inline-block;
+                text-align: center;
+                font-size: px-to-rem(18);
+                color: $bg;
+                width: 40px;
+                height: 40px;
+                padding-top: 6px;
+                border: 1px solid get-color('white');
+                border-radius: 8%;
+                // margin: 0 3px;
+                text-decoration: none;
+                }
+            }
+        }
+        
+        i.tg-ic-linkedin.linkedin {
+            font-size: 20px;
+             background-color: $white-color ;
+             border: 1px solid get-color('white');
+                border-radius: 10%;
+        }
+    
+        i.tg-ic-facebook.fb {
+            font-size: 20px;
+             background-color: $white-color ;
+             border: 1px solid get-color('white');
+            border-radius: 10%;
+        }
+    
+        i.tg-ic-twitter.twitter {
+            font-size: 25px;
+            background-color: $bg !important;
+            color:$white-color !important;
+        }
+    
+        i.tg-ic-medium.medium {
+            font-size: 20px;
+             background-color: $white-color ;
+             color:$bg;
+             border: 3px solid get-color('white');
+                border-radius: 10%;
+        }
+    
+        }
+       .explore {
+      margin-top:40px;
+      font-family:sans-serif, HK Grotesk;
+        h4{
+        
+        color:$font-color !important;
+        font-size: 18px;
+        line-height: 22px;
+        margin-left: 50px;
+        }
+      li a {
+          text-decoration: none;
+          
+          color:$font-color !important;
+        font-size: 16px;
+        line-height: 22px;
+        
+
+    
+      }
+    
+
+      li {
+          list-style: none;
+          line-height: 21px;
+          padding:8px;
+
+      }
+    }
+
+    .latest-from-our-blog {
+        margin:40px;
+        font-family:sans-serif, HK Grotesk;
+       
+        h4{
+        color:$font-color;
+        font-size: 18px;
+        line-height: 22px;
+        }
+      
+        a {
+            text-decoration: none;
+            color: $font-color !important;
+            font-size: 16px;
+            line-height: 24px;
+            
+        }
+
+        li {
+            list-style: none;
+            line-height: 24px;
+            padding:8px;
+        }
+
+        
+    }
+
+    hr{
+    display: block; height: 1px;
+    border: 0; border-top: 1px solid #AED0FF;
+   padding: 0;
+    width:93%;
+}
+
+.bottom-line {
+    margin-top:8px;
+    margin-bottom: 20px;
+    margin-left: 42px;
+    margin-right: 42px;
+
+    p{
+       
+       
+       
+        a{
+            color: $white-color !important;
+            text-decoration: none;
+            font-size: 14px;
+            
+        }
+    }
+}
+
+
