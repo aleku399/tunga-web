@@ -21,22 +21,22 @@ import "../Footer/slick/slick/slick-theme.css";
 import "./Footer.scss";
 
 class Footer extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
-        var settings = {
-            dots: false,
-            infinite: true,
-            speed: 500,
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-            arrows:false,
-            rows:1
-        };
-        return (
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    var settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows:false,
+        rows:1
+      };
+    return (
             <footer>
                 {/*------------ Press------------- */}
                 <Row>
@@ -51,33 +51,49 @@ class Footer extends Component {
                         <Col md="9" sm="6">
                         <div className="also-featured">
                             <Slider {...settings}>
-                                {/* <a href="#">
-                                    <img   height="100px" width="80.28px" title="bbc news" src={BBC} />
-                                </a> */}
+                            <div className="item">
                                 <a href="#">
-                                    <img height="50px" width="100px" title="campus party"
+                                    <img   height="50px" width="50px" title="bbc news" src={BBC} />
+                                </a>
+                                </div>
+                                <div className="item">
+                                <a href="#">
+                                    <img  height="30px" width="85px"
                                     src={campusparty} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img  height="70px" width="60.28px" title="OneWorld" src={oneworld} />
+                                    <img   height="40px" width="40px" src={oneworld} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img height="80px" width="115px" title="TrendingWatching"
+                                    <img  height="40px" width="90px"
                                     src={trendwatching} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img height="50px" width="160px" title="AfricanTechRoundUp" src={African} />
+                                    <img   height="40px" width="110px" src={African} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img height="50px" width="46px" src={NABC} />
+                                    <img  height="40px" width="40px" src={NABC} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img height="50px" width="46px" src={bnr1} />
+                                    <img   height="50px" width="40px" src={bnr1} />
                                 </a>
+                                </div>
+                                <div className="item">
                                 <a href="#">
-                                    <img height="50px" width="46px" src={Detelegraph}
+                                    <img  height="30px" width="100px" src={Detelegraph}
                                     />
                                 </a>
+                                </div>
                                 
                             </Slider>
                             </div>
@@ -177,7 +193,7 @@ class Footer extends Component {
                                     <a href="#">Our Story</a>
                                 </li>
                                 <li>
-                                    <a href="#">News</a>
+                                    <a href="#">News</a> // infinite: true,
                                 </li>
                                 <li>
                                     <a href="#">Effortless software projects</a>
@@ -263,8 +279,8 @@ class Footer extends Component {
                     {/* </div> */}
                 </Row>
             </footer>
-        );
-    }
+      );
+  }
 }
 Footer.propTypes = {};
 
