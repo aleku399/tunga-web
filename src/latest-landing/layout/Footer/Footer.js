@@ -193,7 +193,7 @@ class Footer extends Component {
                                     <a href="#">Our Story</a>
                                 </li>
                                 <li>
-                                    <a href="#">News</a> // infinite: true,
+                                    <a href="#">News</a>
                                 </li>
                                 <li>
                                     <a href="#">Effortless software projects</a>
@@ -257,26 +257,26 @@ class Footer extends Component {
                     </Col>
                     <Col md="2" sm="4">
                     <div className="bottom-line">
-                        <p className="text-xs-left">
+                        <p className="text-xs-right text-white">
                             <a href="#">Privacy policy</a>
                         </p>
                         </div>
                     </Col>
                     <Col md="2" sm="4">
                     <div className="bottom-line">
-                        <p className="text-xs-left">
+                        <p className="text-xs-right text-white">
                             <a href="#">User Agreement</a>
                         </p>
                         </div>
                     </Col>
                     <Col md="2" sm="4">
                     <div className="bottom-line">
-                        <p className="text-xs-left">
+                        <p className="text-xs-right white-text">
                             <a href="#">Code of conduct</a>
                         </p>
                         </div>
                     </Col>
-                    {/* </div> */}
+                    
                 </Row>
             </footer>
       );
