@@ -25,83 +25,146 @@ class Footer extends Component {
     super(props);
   }
   render() {
-    var settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 6,
+  var settings =({
+    dots: false,  
+    swipeToSlide: true,
+   pauseOnHover:true,
+    infinite: true,
+    speed: 500,
+    autoplay:true,
+    draggable: true,
+    autoplaySpeed: 2000,
+     arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    responsive: [{
+      breakpoint: 1024,
+      settings: {
+    slidesToShow: 3,
+    slidesToScroll: 1,
+      }
+
+    }, {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2,
+        
+
+      }
+
+
+    }, {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        
+            
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows:false,
-        rows:1
-      };
+        
+        }
+    }]
+});
+  
     return (
             <footer>
                 {/*------------ Press------------- */}
                 <Row>
-                    
-                        <Col md="3" sm="6">
+                    <Col md="3" sm="6">
                         <div className="also-featured">
                             <h5>ALSO FEATURED IN</h5>
-                            </div>
-                        </Col>
-                        
-                        
-                        <Col md="9" sm="6">
+                        </div>
+                    </Col>
+
+                    <Col md="9" sm="6">
                         <div className="also-featured">
-                            <Slider {...settings}>
-                            <div className="item">
-                                <a href="#">
-                                    <img   height="50px" width="50px" title="bbc news" src={BBC} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img  height="30px" width="85px"
-                                    src={campusparty} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img   height="40px" width="40px" src={oneworld} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img  height="40px" width="90px"
-                                    src={trendwatching} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img   height="40px" width="110px" src={African} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img  height="40px" width="40px" src={NABC} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img   height="50px" width="40px" src={bnr1} />
-                                </a>
-                                </div>
-                                <div className="item">
-                                <a href="#">
-                                    <img  height="30px" width="100px" src={Detelegraph}
-                                    />
-                                </a>
-                                </div>
+                            <Slider className="carousel" {...settings}>
+                                <div className="bbc">
                                 
+
+                                    <a href="#">
+                                        <img
+                                            
+                                            alt="BBC NEWS"
+                                            src={BBC}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="party">
+                                    <a href="#">
+                                        <img
+                                            
+                                            alt="CAMPUS PARTY"
+                                            src={campusparty}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="world">
+                                    <a href="#">
+                                        <img
+                                           
+                                            alt="ONE WORLD"
+                                            src={oneworld}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="trend">
+                                    <a href="#">
+                                        <img
+                                           
+                                            alt="TREND WATCHING"
+                                            src={trendwatching}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="afn hide-on-mobile">
+                                    <a href="#">
+                                        <img
+                                            
+                                            alt="AFRICAN TECH ROUND UP"
+                                            src={African}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="nabc">
+                                    <a href="#">
+                                        <img
+                                            
+                                            alt="NABC"
+                                            src={NABC}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="bnr">
+                                    <a href="#">
+                                        <img
+                                            
+                                            alt="BNR"
+                                            src={bnr1}
+                                        />
+                                    </a>
+                                </div>
+                                <div className="graf hide-on-mobile">
+                                    <a href="#">
+                                        <img
+                                           
+                                            alt="DE TELEGRAAF"
+                                            src={Detelegraph}
+                                        />
+                                    </a>
+                                </div>
                             </Slider>
-                            </div>
-                        </Col>
-                    
+                        </div>
+                    </Col>
                 </Row>
 
-                <hr className="line2"/>
+                <hr id="line"/>
                 {/*------------------Our Offices------------------- */}
                 <Row>
                     <Col md="3" sm="6">
@@ -111,6 +174,7 @@ class Footer extends Component {
                                 <h5>KAMPALA</h5>
                                 <p>Design Hub Kampala</p>
                                 <p>5th Street, Industrial Area</p>
+                                <p>Kampala, Uganda</p>
                             </div>
 
                             <div className="tunga-amsterdam">
@@ -123,12 +187,11 @@ class Footer extends Component {
                     </Col>
 
                     {/*--------------------------Connect With Us---------------------- */}
-                    
+
                     <Col md="3" sm="6">
                         <div className="connect">
-                        <h4>CONNECT</h4>
+                            <h4>CONNECT</h4>
                             <div className="hello-tunga">
-                                
                                 <p>
                                     <a href="mailto:hello@tunga.io">
                                         hello@tunga.io
@@ -179,8 +242,7 @@ class Footer extends Component {
                             </div>
                         </div>
                     </Col>
-                    
-            
+
                     {/*-----------------explore-------------- -- */}
                     <Col md="3" sm="6">
                         <div className="explore">
@@ -216,9 +278,9 @@ class Footer extends Component {
                             </ul>
                         </div>
                     </Col>
-                    
+
                     {/*--------------------Latest From Our Blog---------------------------- */}
-                    
+
                     <Col md="3" sm="6">
                         <div className="latest-from-our-blog">
                             <h4>LATEST FROM OUR BLOG</h4>
@@ -243,40 +305,39 @@ class Footer extends Component {
                         </div>
                     </Col>
                 </Row>
-                <hr className="line2"/>
+                <hr id="line"/>
                 <Row>
                     {/*-----------------------Footer Bottom-------------------------------- */}
-                   
+
                     <Col md="6" sm="6">
-                    <div className="bottom-line">
-                        <p className="text-xs-left">
-                            {new Date().getFullYear()} Tunga Bv - All rights
-                            reserved
-                        </p>
+                        <div className="bottom-line">
+                            <p className="text-xs-left">
+                                {new Date().getFullYear()} Tunga Bv - All rights
+                                reserved
+                            </p>
                         </div>
                     </Col>
                     <Col md="2" sm="4">
-                    <div className="bottom-line">
-                        <p className="text-xs-right text-white">
-                            <a href="#">Privacy policy</a>
-                        </p>
+                        <div className="bottom-line">
+                            <p className="text-xs-right">
+                                <a href="#">Privacy policy</a>
+                            </p>
                         </div>
                     </Col>
                     <Col md="2" sm="4">
-                    <div className="bottom-line">
-                        <p className="text-xs-right text-white">
-                            <a href="#">User Agreement</a>
-                        </p>
+                        <div className="bottom-line">
+                            <p className="text-xs-right">
+                                <a href="#">User Agreement</a>
+                            </p>
                         </div>
                     </Col>
                     <Col md="2" sm="4">
-                    <div className="bottom-line">
-                        <p className="text-xs-right white-text">
-                            <a href="#">Code of conduct</a>
-                        </p>
+                        <div className="bottom-line">
+                            <p className="text-xs-right">
+                                <a href="#">Code of conduct</a>
+                            </p>
                         </div>
                     </Col>
-                    
                 </Row>
             </footer>
       );
