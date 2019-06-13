@@ -231,7 +231,7 @@ footer {
   and (-webkit-min-device-pixel-ratio: 1) {
     .slick-slide img {
         width : auto;
-        height: 80px !important;
+        height: 100px !important;
     }
         // .hide-on-mobile img{
         //     display:none !important;
@@ -249,7 +249,7 @@ and(-webkit-min-device-pixel-ratio: 2)
 {
     .slick-slide img {
         width : auto;
-        height: 50px !important;
+        height: 80px !important;
     }
         // .hide-on-mobile img{
         //     display:none !important;

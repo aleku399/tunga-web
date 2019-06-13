@@ -105,6 +105,7 @@ class Footer extends Component {
                                         />
                                     </a>
                                 </div>
+
                                 <div className="world">
                                     <a href="#">
                                         <img
@@ -114,6 +115,7 @@ class Footer extends Component {
                                         />
                                     </a>
                                 </div>
+                                
                                 <div className="trend">
                                     <a href="#">
                                         <img
