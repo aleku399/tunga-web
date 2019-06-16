@@ -158,7 +158,7 @@ footer {
     li {
         list-style: none;
         line-height: 21px;
-        padding: 8px;
+        margin-bottom: 10px;
     }
 }
 // LATEST FROM OUR BLOG ////////////////////////////
@@ -215,9 +215,9 @@ footer {
 // MEDIA QUERIES /////////////////////////////////
 
 // LAPTOPS /////////////////////
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) {
     .slick-slide img  {
@@ -225,9 +225,9 @@ footer {
               height: 100px !important;
 }
 // TABLETS /////////////////////
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .slick-slide img {
         width : auto;
@@ -235,17 +235,17 @@ footer {
     }
         // .hide-on-mobile img{
         //     display:none !important;
-            
+
         // }
-    
+
 }
 
 // PHONES //////////////////////
-@media only screen 
+@media only screen
 and (max-device-width: 480px)
-and(max-width: 480px) 
+and(max-width: 480px)
 and (min-device-width: 320px)
-and(-webkit-min-device-pixel-ratio: 2) 
+and(-webkit-min-device-pixel-ratio: 2)
 {
     .slick-slide img {
         width : auto;
@@ -253,19 +253,19 @@ and(-webkit-min-device-pixel-ratio: 2)
     }
         // .hide-on-mobile img{
         //     display:none !important;
-            
+
         // }
-    
+
 }
 // IMAGES SCSS ////////////////////
     // .slick-slide img{
     //     height:50px;
     //     line-height: 70px;
     //     margin:auto;
-    //     position: relative; 
+    //     position: relative;
     //    width:auto !important;
     //    vertical-align: middle;
-        
+
     // }
 
   }
@@ -286,37 +286,37 @@ and(-webkit-min-device-pixel-ratio: 2)
   }
 
   .bbc img{
-   
-    margin:auto;  
+
+    margin:auto;
   }
   .party img{
-    
+
     margin:auto;
   }
 
   .trend img{
-   
+
     margin:auto;
   }
   .world img{
-   
+
     margin:auto;
   }
   .afn img{
-   
+
     margin:auto;
   }
   .nabc img{
-    
+
     margin:auto;
   }
   .bnr img{
-   
+
 
     margin:auto;
 }
   .graf img{
-     
+
     margin:auto;
   }
 
