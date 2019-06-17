@@ -30,8 +30,13 @@ footer {
     // ALSO FEATURED IN ///////////////////////////////
     .also-featured {
         margin-top: 90px;
-        margin-left: 48px;
-        margin-right: 48px;
+        padding: 11px;
+
+        @media only screen and (min-width: 768px) {
+            padding: 0;
+            margin-left: 48px;
+            margin-right: 48px;
+        }
 
         h5 {
             font-family: sans-serif;
