@@ -54,8 +54,8 @@ footer {
             color: $white-color !important;
             font-size: 14px;
             line-height: 21px;
-            padding-bottom: 15px;
             padding-top: 15px;
+            margin-bottom: 9px;
         }
         p {
             color: $font-color;
@@ -97,38 +97,41 @@ footer {
                 text-align: center;
                 font-size: px-to-rem(18);
                 color: $bg;
-                width: 40px;
-                height: 40px;
                 padding-top: 10px;
                 border: 1px solid get-color("white");
                 border-radius: 8%;
                 text-decoration: none;
+                margin-right: 22px;
             }
         }
     }
 
     i.tg-ic-linkedin.linkedin {
-        font-size: 20px;
+        font-size: 22px;
+        padding: 1px;
         background-color: $white-color;
         border: 1px solid get-color("white");
         border-radius: 10%;
     }
 
     i.tg-ic-facebook.fb {
-        font-size: 20px;
+        font-size: 22px;
+        padding: 1px;
         background-color: $white-color;
         border: 1px solid get-color("white");
         border-radius: 10%;
     }
 
     i.tg-ic-twitter.twitter {
-        font-size: 25px;
+        font-size: 22px;
+        padding: 1px;
         background-color: $bg !important;
         color: $white-color !important;
     }
 
     i.tg-ic-medium.medium {
-        font-size: 20px;
+        font-size: 22px;
+        padding: 1px;
         background-color: $white-color;
         color: $bg;
         border: 3px solid get-color("white");
@@ -143,7 +146,7 @@ footer {
     h4 {
         color: $font-color !important;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 22px;
         margin-bottom: 20px;
     }
     li a {
@@ -168,20 +171,21 @@ footer {
     h4 {
         color: $font-color;
         font-size: 18px;
-        line-height: 21px;
+        line-height: 22px;
+        margin-bottom: 17px;
     }
 
     a {
         text-decoration: none;
         color: $font-color !important;
         font-size: 16px;
-        line-height: 21px;
+        line-height: 24px;
     }
 
     li {
         list-style: none;
-        line-height: 21px;
-        padding: 8px;
+        line-height: 24px;
+        margin-bottom: 20px;
     }
 }
 
