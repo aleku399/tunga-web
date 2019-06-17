@@ -2,12 +2,12 @@
 $bg: #062e64;
 $white-color: #fff;
 $font-color: #aed0ff;
-$font-fmily:hk grotesk;
+$font-fmily: hk grotesk;
 
 // BODY ////////////////////////////////////////////
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -18,6 +18,7 @@ body {
     box-sizing: border-box;
     margin: 0;
 }
+
 // FOOTER ////////////////////////////////////
 footer {
     clear: both;
@@ -42,8 +43,12 @@ footer {
 
     // TUNGA OFFICES /////////////////////////////////////
     .tunga-offices {
-        margin: 44px;
         font-family: sans-serif, HK Grotesk;
+        margin: 44px 18px;
+
+        @media only screen and (min-width: 768px) {
+            margin: 44px;
+        }
 
         h4 {
             color: $font-color !important;
@@ -66,7 +71,12 @@ footer {
 
     // CONNECT /////////////////////////////////////
     .connect {
-        margin: 40px;
+        margin: 40px 18px;
+
+        @media only screen and (min-width: 768px) {
+            margin: 40px;
+        }
+
         font-family: sans-serif, HK Grotesk;
         h4 {
             color: $font-color !important;
@@ -141,7 +151,12 @@ footer {
 
 // EXPLORE /////////////////////////////////////////
 .explore {
-    margin: 40px;
+    margin: 40px 18px;
+
+    @media only screen and (min-width: 768px) {
+        margin: 40px;
+    }
+
     font-family: sans-serif, HK Grotesk;
     h4 {
         color: $font-color !important;
@@ -163,9 +178,15 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 // LATEST FROM OUR BLOG ////////////////////////////
 .latest-from-our-blog {
-    margin: 40px;
+    margin: 40px 18px;
+
+    @media only screen and (min-width: 768px) {
+        margin: 40px;
+    }
+
     font-family: sans-serif, HK Grotesk;
 
     h4 {
@@ -206,7 +227,7 @@ footer {
 }
 
 // HR LINES /////////////////////////////////////
-#line{
+#line {
     display: block;
     height: 1px;
     border: 0;
@@ -215,52 +236,41 @@ footer {
     width: 93.5%;
     margin-left: 40px !important;
 }
+
 // MEDIA QUERIES /////////////////////////////////
 
 // LAPTOPS /////////////////////
-@media screen
-  and (min-device-width: 1200px)
-  and (max-device-width: 1600px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) {
-    .slick-slide img  {
-              width : auto;
-              height: 100px !important;
-}
-// TABLETS /////////////////////
-@media only screen
-  and (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .slick-slide img {
-        width : auto;
+        width: auto;
         height: 100px !important;
     }
+    // TABLETS /////////////////////
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+        .slick-slide img {
+            width: auto;
+            height: 100px !important;
+        }
         // .hide-on-mobile img{
         //     display:none !important;
 
         // }
 
-}
-
-// PHONES //////////////////////
-@media only screen
-and (max-device-width: 480px)
-and(max-width: 480px)
-and (min-device-width: 320px)
-and(-webkit-min-device-pixel-ratio: 2)
-{
-    .slick-slide img {
-        width : auto;
-        height: 80px !important;
     }
+
+    // PHONES //////////////////////
+    @media only screen and (max-device-width: 480px) and(max-width: 480px) and (min-device-width: 320px) and(-webkit-min-device-pixel-ratio: 2) {
+        .slick-slide img {
+            width: auto;
+            height: 80px !important;
+        }
         // .hide-on-mobile img{
         //     display:none !important;
 
         // }
 
-}
-// IMAGES SCSS ////////////////////
+    }
+    // IMAGES SCSS ////////////////////
     // .slick-slide img{
     //     height:50px;
     //     line-height: 70px;
@@ -271,55 +281,61 @@ and(-webkit-min-device-pixel-ratio: 2)
 
     // }
 
-  }
+}
 
-  .slick-slide{
+.slick-slide {
     height: 50px;
     margin: 0 10px;
     // background-color: lightblue;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-    width:auto ;
-  }
-  .slick-slide a {
+    width: auto;
+}
+
+.slick-slide a {
     display: block;
     width: 100%;
     height: 100%;
-  }
-
-  .bbc img{
-
-    margin:auto;
-  }
-  .party img{
-
-    margin:auto;
-  }
-
-  .trend img{
-
-    margin:auto;
-  }
-  .world img{
-
-    margin:auto;
-  }
-  .afn img{
-
-    margin:auto;
-  }
-  .nabc img{
-
-    margin:auto;
-  }
-  .bnr img{
-
-
-    margin:auto;
 }
-  .graf img{
 
-    margin:auto;
-  }
+.bbc img {
+
+    margin: auto;
+}
+
+.party img {
+
+    margin: auto;
+}
+
+.trend img {
+
+    margin: auto;
+}
+
+.world img {
+
+    margin: auto;
+}
+
+.afn img {
+
+    margin: auto;
+}
+
+.nabc img {
+
+    margin: auto;
+}
+
+.bnr img {
+
+    margin: auto;
+}
+
+.graf img {
+
+    margin: auto;
+}
 
